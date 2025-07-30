@@ -6,7 +6,7 @@ A simple and responsive web-based calculator built using **HTML**, **CSS**, and 
 
 ## 🔗 Live Demo
 
-[Click here to view the live demo](#) <!-- Replace # with your actual deployed URL if available -->
+Click Here For Live Demo [ CALCULATOR ](https://mujaheedalikhan.github.io/BASIC_PROJECTS/CALCULATOR/)
 
 ---
 
@@ -33,4 +33,4 @@ A simple and responsive web-based calculator built using **HTML**, **CSS**, and 
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/basic-calculator.git
+   git clone https://github.com/MujaheedAliKhan/BASIC_PROJECTS.git

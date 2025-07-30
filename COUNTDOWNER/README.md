@@ -6,8 +6,7 @@ A simple and responsive **Countdown Timer** built using **HTML**, **CSS**, and *
 
 ## 🔗 Live Demo
 
-[Click here to view the live demo](#)  
-<!-- Replace `#` with your deployed link like Netlify/Vercel/Firebase if available -->
+Click Here For Live Demo [COUNTDOWNER](https://mujaheedalikhan.github.io/BASIC_PROJECTS/COUNTDOWNER/)
 
 ---
 
@@ -37,7 +36,7 @@ A simple and responsive **Countdown Timer** built using **HTML**, **CSS**, and *
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/basic-calculator.git
+   git clone https://github.com/MujaheedAliKhan/BASIC_PROJECTS.git
 
 
 

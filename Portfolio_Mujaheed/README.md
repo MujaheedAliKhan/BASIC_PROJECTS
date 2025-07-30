@@ -6,7 +6,7 @@ This is a fully responsive personal portfolio website created using **HTML**, **
 
 ## 📌 Live Preview
 
-[View Portfolio](#) *(Replace `#` with your live deployment link if available)*
+Click Here For Live Demo [Porfolio_Mujaheed ]( https://mujaheedalikhan.github.io/BASIC_PROJECTS/Portfolio_Mujaheed/)
 
 ---
 
@@ -34,5 +34,5 @@ This is a fully responsive personal portfolio website created using **HTML**, **
 
 ## Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/portfolio-website.git
+   git clone https://github.com/MujaheedAliKhan/BASIC_PROJECTS.git
 
