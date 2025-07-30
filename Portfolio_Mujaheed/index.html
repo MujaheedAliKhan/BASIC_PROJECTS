@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="color-1.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+      <div class="header">
+        <div class="navbar">
+          <div class="logo">Portfolio</div>
+          <div class="tabs">
+            <a href="" class="hide">Home</a>
+            <a href=".skills" class="hide">Skills</a>
+            <a href="#" class="hide">Education</a>
+            <a href="#" class="hide">Acheivements</a>
+            <a href="#" class="hide">Contact Us</a>
+            <a href="./resume_ATS.html" id="resume" class="hide" target="_blank">Resume-CV</a>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showSideBar()"></i>
+          </div>
+          
+          <div class="side-bar">
+            <ul>
+              <i class="fa fa-times" aria-hidden="true" onclick="hideSideBar()"></i>
+              <li><a href="#"></a>Home</li>
+              <li><a href="#"></a>Skills</li>
+              <li><a href="#"></a>Education</li>
+              <li><a href="#"></a>Acheivements</li>
+              <li><a href="#"></a>Contact Us</li>
+              <li> <a href="./resume_ATS.html" id="resume" target="_blank"></a>RESUME-CV</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="about">
+          <div class="image">
+            <img src="./images/IMG_7174.jpg" id="text" alt="">
+          </div>
+          <div class="content">
+            <h1>Lavani</h1>
+            <h1>Mujaheed Ali Khan</h3>
+            <h3>And I'm a <span id="text"> Frontend and Web Developer!</span></h3>
+            <!-- <p>Fresh graduate in Bachelor of Computer Application.
+            <br>from Shri Gnanambica Degree College, Madanapalle. -->
+             <p id="para">Motivated <span>Computer Science,</span> <br>Graduate with frontend development skills in <span>Html, Css, and Javascript.</span> <br>Passionate about creating responsive, user friendly web applications. <br>Seeking an entry-level Frontend Develper role to contribute and grow in a dynamic team.</p>
+          </p>
+          <div class="icons">
+            <a href="https://github.com/MujaheedAliKhan" target="_blank" ><i class="bx bxl-github"></i></a>
+            <a href="#" ><i class="bx bxl-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/mujaheedalikhan" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          </div>
+        </div>
+        </div>
+         <div class="skills">
+          <div class="technical">
+            <h3 id="heading">TECHNICAL <span>SKILLS</span></h3>
+            <div class="lang">
+              <div class="html">
+                <p>HTML</p>
+                <span>80%</span>
+              </div>
+            </div>
+            <div class="lang">
+              <div class="css">
+                <p>Css</p>
+                <span>65%</span>
+              </div>
+            </div>
+            <div class="lang">
+              <div class="Javascript">
+                <p>Javascript</p>
+                <span>50%</span>
+              </div>
+            </div>
+            <div class="lang">
+              <div class="reactjs">
+                <p>Reactjs</p>
+                <span>40%</span>
+              </div>
+            </div>
+            <div class="lang">
+              <div class="github">
+                <p>GitHub</p>
+                <span>80%</span>
+              </div>
+            </div>
+          </div>
+          <div class="communication">
+            <H3 id="heading">COMMUNICATION <span>SKILLS</span></H3>
+            <div class="list">
+              <ul>
+              <li>Self Motivated</li>
+              <li>Optimistic</li>
+              <li>Honesty</li>
+              <li>Self Confidence</li>
+              <li>Hard Working</li>
+            </ul>
+            </div>
+          </div>
+        </div>
+        <div class="education">
+          <div class="degree card">
+            <h3>SSC-<span>Schooling</span></h3>
+            <p>Arogyamatha English Medium School, Madanapalle</p>
+            <!-- <p>Madanapalle</p> -->
+            <p><span>Course:</span> SSC, 9.8% <span>CGPA</span></p>
+            <a href="./images/10th-Marklist.jpg" target="_blank">View Mark List</a>
+          </div>
+          <div class="inter card">
+                <h3>Inter <span>11th</span> and <span>12th</span></h3>
+            <p>Sri Siddartha Junior College, Madanapalle</p>
+            <!-- <p>Madanapalle</p> -->
+            <p><span>Course:</span> MEC, 7.8% <span>CGPA</span></p>
+            <a href="./images/Inter-Marklist.pdf" target="_blank">View Mark List</a>
+          </div>
+          <div class="ssc card">
+             <h3>Degree - <span>UG</span></h3>
+            <p>Shri Gnanambica Degree College, Madanapalle</p>
+            <!-- <p>Madanapalle</p> -->
+            <p><span>Course:</span> BCA, 8.0% <span>CGPA</span></p>
+            <a href="#">View Mark List</a>
+          </div>
+        </div>
+        <div class="acheivements">
+            <div class="pro-cert card-1">
+              <h1>1<span>+</span></h1>
+              <p>Tech</p>
+              <p>Certificates</p>
+              <a href="./tech_img.html" target="_blank">View</a>
+            </div>
+            <div class="sports-cert card-1">
+              <h1>2<span>+</span></h1>
+              <p>Sports</p>
+              <p>Certificates</p>
+              <a href="">View</a>
+            </div>
+        </div>
+        <div class="contact">
+          <div class="left-part">
+            <form>
+              <input type="text" id="name" placeholder="Name">
+              <input type="email" id="email" placeholder="Email">
+              <textarea name="msg" id="msg" placeholder="Type Message Here" rows="3"></textarea>
+              <button id="submit">Submit</button>
+            </form>
+          </div>
+               <div class="right-part">
+            <div class="address">
+              <h3><i class="fa fa-location-arrow" aria-hidden="true"></i>Address</h3>
+              <p>Madanapalle,</p>
+              <p>AndhraPradesh.</p>
+              <p id="pincode">517325</p>
+            </div>
+            <div class="phone">
+              <h3><i class='bx bx-phone'></i>Phone</h3>
+              <p><span>+91</span> 995 189 3026</p>
+            </div>
+            <div class="email">   
+              <h3><i class='bx bxl-gmail'></i>Email</h3>
+              <p id="email">lavanimujaheedalikhan@gmail.com</p>
+            </div>
+            <div class="icons-2">
+            <a href="https://github.com/MujaheedAliKhan" target="_blank" ><i class="bx bxl-github"></i></a>
+            <a href="#" ><i class="bx bxl-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/mujaheedalikhan" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer"></div>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

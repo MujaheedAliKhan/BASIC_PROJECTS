@@ -1,0 +1,75 @@
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(60deg, #282c34, #61dafb);
+    color: #ffffff;
+}
+.timer-container {
+    width: 65vw;
+    text-align: center;
+    padding: 1rem;
+    /* border: .1rem solid white; */
+    border-radius: 12px;
+    background-color: #20232a;
+    box-shadow: 0 0 2rem black;
+}
+
+.timer-container h1 {
+    color: #61dafb;
+    font-size: 4vw;
+    margin-bottom: 1rem;
+}
+.inputs {
+    margin-bottom: 1rem;
+}
+.inputs input {
+    padding: .6rem;
+    margin: .3rem;
+    border-radius: .4rem;
+    border: 1px solid #61dafb;
+    outline: none;
+}
+#date-time{
+    outline: none;
+    border: none;
+    width: 50vw;
+    margin-top: .3rem;
+    box-shadow: 0 0 .2rem white;
+}
+.timer-container .inputs #label{
+    font-size: 2vw;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.inputs button {
+    padding: 10px 20px 10px 20px;
+    margin: 8px;
+    width: 50vw;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 6px;
+    background-color: #61dafb;
+    cursor: pointer;
+    transition: .1s;
+}
+.inputs button:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 .3rem white;
+
+}
+.countdown {
+    font-size: 2.3vw;
+    font-weight: 600;
+}

@@ -1,0 +1,823 @@
+:root{
+    --color-1:#00343d;
+    --color-2-bg:#001b20;
+    --color-3:#00eeff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color:#001b20;
+}
+.navbar{
+    height: 13%;
+    width: 100vw;
+    position: fixed;
+    background-color:var(--color-1);
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.navbar .logo{
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+}
+.navbar a{
+    text-decoration: none;
+    margin: 1rem;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 600;
+    transition: .1s;
+    padding-bottom: .3rem;
+}
+.navbar a:hover{
+    color: var(--color-3);
+    padding-bottom: .3rem;
+    border-bottom: .2rem solid white;
+}
+.tabs #resume{
+    border-bottom: none;
+    border: .1rem solid white;
+    padding: .5rem;
+    border-radius: .6rem;
+    font-size: 1.1rem;
+    background-color: var(--color-3);
+    color: white;
+    box-shadow: 0 0 .4rem white;
+    transition: .1s;
+}
+.tabs #resume:hover{
+    background-color: var(--color-1);
+}
+.tabs i{
+    color: white;
+    font-size: 2.5rem;
+    visibility: hidden;
+}
+.menu-bar i{
+    color: white;
+}
+.navbar .side-bar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    backdrop-filter: blur(2rem);
+    color: white;
+    height: 100vh;
+    width: 35vw;
+    background-color: var(--color-1);
+    box-shadow: 0 0 1rem var(--color-3) inset;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 999;
+    transition: .1s;
+}
+.side-bar i{
+    display: flex;
+    width: 25vw;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 2rem;
+    margin-left: 4rem;
+    font-size: 1.8rem;
+    /* background-color: red; */
+}
+.side-bar ul li:hover{
+    background-color: var(--color-3);
+    box-shadow: 0 0 .2rem white;
+}
+.side-bar ul li{
+    list-style-type: none;
+    padding: 1rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.about{
+    /* margin-top: 2rem; */
+    display: flex;
+    height: 100vh;
+    /* flex-wrap: wrap-reverse; */
+    /* background-color: white; */
+    justify-content: space-around;
+    align-items: center;
+}
+.content{
+    margin-top: 3rem;
+    color: white;
+}
+.content h1{
+    font-size: 2.3rem;
+}
+.content h3{
+    font-size: 2.3rem;
+}
+#text{
+    color: var(--color-3);
+    font-size: 2.3rem;
+}
+.content p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    flex-wrap: wrap;
+}
+.content #para{
+    font-size: 1.2rem ;
+    margin-top: 1rem;
+}
+.content #para span{
+    color: var(--color-3);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left:.3rem;
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    width: 20vw;
+    /* background-color: white; */
+}
+.icons a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.2rem;
+    width:3.2rem;
+    border-radius: 55%;
+    border: .1rem solid var(--color-3);
+    font-size: 2rem;
+    margin-top: 3rem;
+    color: var(--color-3);
+    transition: .1s;
+}
+.icons a:hover{
+    color: white;
+    background-color: var(--color-3);   
+    box-shadow: 0 0 10px var(--color-3); 
+}
+.about img{
+    height: auto;
+    width: 20vw;
+    /* border-radius: 1rem; */
+    border: .1rem solid white;
+    box-shadow: 0 0 .5rem white;
+    position: relative;
+    z-index: -1;
+}
+
+.skills{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.skills .technical{
+    font-size: 1.2rem;
+    color: white;
+    height: auto;
+    width: 25vw;
+    z-index: -1;
+    /* background-color: red; */
+}
+#heading{
+    text-align: center;
+    font-size: 2.2rem;
+}
+#heading span{
+    color: var(--color-3);
+}
+.technical .lang{
+    margin-top: 2rem;
+    /* padding: .3rem; */
+    width: 100%;
+    height: auto;
+    /* background-color: blue; */
+    border: .1rem solid white;
+    border-radius: 2rem;
+}
+.technical .html{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 6vh;
+    border-radius: 2rem 0 0 2rem;
+    background-color:var(--color-3);
+    box-shadow:0 0 2px white;
+    font-weight: 600;
+}
+.technical .html p{
+    position: relative;
+    left: 2.5rem;
+}
+.technical .html span{
+    position: relative;
+    left: 3rem;
+}
+
+.technical .css{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    height: 6vh;
+    border-radius: 2rem 0 0 2rem;
+    background-color:var(--color-3);
+    box-shadow:0 0 8px white;
+    font-weight: 600;
+}
+.technical .css p{
+    position: relative;
+    left: 2.5rem;
+}
+.technical .css span{
+    position: relative;
+    left: 3rem;
+}
+
+.technical .Javascript{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 6vh;
+    border-radius: 2rem 0 0 2rem;
+    background-color:var(--color-3);
+    box-shadow:0 0 8px white;
+    font-weight: 600;
+}
+.technical .Javascript p{
+    position: relative;
+    left: 2.5rem;
+}
+.technical .Javascript span{
+    position: relative;
+    left: 3rem;
+}
+.technical .reactjs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 6vh;
+    border-radius: 2rem 0 0 2rem;
+    background-color:var(--color-3);
+    box-shadow:0 0 8px white;
+    font-weight: 600;
+}
+.technical .reactjs p{
+    position: relative;
+    left: 2.5rem;
+}
+.technical .reactjs span{
+    position: relative;
+    left: 3rem;
+}
+.technical .github{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 6vh;
+    border-radius: 2rem 0 0 2rem;
+    background-color:var(--color-3);
+    box-shadow:0 0 8px white;
+    font-weight: 600;
+}
+.technical .github p{
+    position: relative;
+    left: 2.5rem;
+}
+.technical .github span{
+    position: relative;
+    left: 3rem;
+}
+.skills .communication{
+    color: white;
+    height: auto;
+    width: 25vw;
+    /* background-color: red; */
+}
+
+.communication .list{
+    margin-top: .3rem;
+    border-radius: 2rem;
+    padding: .3rem;
+    border: .1rem solid var(--color-3);
+    box-shadow: 0 0 5px var(--color-3) inset;
+
+}
+.list ul li{
+    list-style: none;
+    margin: 1.5rem;
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 600;
+}
+.list ul li:hover{
+    color: var(--color-3);
+}
+
+.education{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    /* background: red; */
+}
+
+.education .card{
+    margin: 1rem;
+    height: auto;
+    width: 30vw;
+    padding: 1.5rem;
+    /* background: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* line-height: 3rem; */
+    gap: 1rem;
+    text-align:start;
+    border: .1rem solid white;
+    box-shadow: 0 0 .8rem white;
+    border-radius: 2rem;
+}
+.education .card{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.education .card span{
+    color: var(--color-3);
+}
+.education .card h3{
+    text-align: center;
+    font-size: 2.3vw;
+}
+.education .card p{
+    text-align: center;
+    font-size: 1.3rem;
+}
+.education .card a{
+   text-decoration: none;
+   font-size: 1.3rem;
+   border: .1rem solid white;
+   width: 80%;
+   text-align: center;
+   padding: .29rem;
+   border-radius: 3rem;
+   background-color: var(--color-3);
+   color: white; 
+   box-shadow: 0 0 .5rem white;
+   transition: .1s;
+}
+.education .card a:hover{
+    background-color: var(--color-1);
+}
+.acheivements{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: red; */
+}
+.acheivements .card-1{
+    border: .1rem solid white;
+    box-shadow: 0 0 1rem white inset; 
+    height: auto;
+    color: white;
+    width: 30vw;
+    padding: min(1.5rem, 8%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+}
+.acheivements .card-1 span{
+    color: var(--color-3);
+}
+.acheivements .card-1 h1{
+    font-size: 6rem;
+}
+.acheivements .card-1 p{
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+.acheivements .card-1 a{
+    text-decoration: none;
+    color: white;
+    width: 80%;
+    border-radius: 5rem;
+    box-shadow: 0 0 .3rem white;
+    margin-top: .5rem;
+    border: .1rem solid white;
+    text-align: center;
+    padding:.3rem;
+    color: white;
+    background-color: var(--color-3);
+    font-weight: 600;
+    font-size: 1.3rem;
+    transition: .1s;
+}
+.acheivements .card-1 a:hover{
+    background-color:var(--color-1);
+}
+.contact{
+    height: 80vh;
+    width: 100%;
+    /* flex-wrap: wrap-reverse; */
+    /* background-color: red; */
+    color: white;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.cont-tabs{
+    display: flex;
+    flex-direction: column;
+}
+.right-part{
+    padding: min(2rem,8%);
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    font-weight: 600;
+    width: 35vw;
+    /* border: 1px solid white; */
+    /* background: blue;
+     */
+}
+.right-part .address{
+   padding-bottom: 1rem; 
+}
+.right-part .address h3{
+    font-size: 1.4rem;
+}
+.right-part .address h3 i {
+    font-size: 1.3rem;
+    margin-right: .3rem;
+    font-weight: 600;
+    color: var(--color-3);
+}
+.right-part .address p{
+    font-size: 1.1rem;
+    margin-left: .3rem;
+}
+.address #pincode{
+    color: var(--color-3);
+}
+.right-part .phone{
+    padding-bottom: 1rem;
+}
+.right-part .phone h3{
+    font-size: 1.4rem;
+}
+.right-part .phone h3 .bx{
+    font-size:1.3rem;
+    margin-right: .3rem;
+    font-weight: 600;
+    color: var(--color-3);
+}
+.right-part .phone p{
+    font-size: 1.1rem;
+    margin-left: .3rem;
+}
+.right-part .email{
+    padding-bottom: 1rem;
+}
+.right-part .email h3{
+    font-size: 1.4rem;
+}
+.right-part .email h3 .bx{
+    font-size:1.3rem;
+    margin-right: .3rem;
+    font-weight: 600;
+    color: var(--color-3);
+}
+.right-part .email #email{
+    font-size: 1.2rem;
+    margin-left: .3rem;
+}
+.email #email{
+    color: var(--color-3);
+}
+.icons-2 i{
+    font-size: 2rem;
+    color: var(--color-3);
+    margin: .5vw;
+}
+.left-part{
+    height: auto;
+    width: 35vw;
+    margin: 1rem;
+    /* background-color: yellow; */
+}
+.left-part form{
+    display: flex;
+    margin: 1rem;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+.left-part form input{
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+    background: none;
+    color: white;
+    border-bottom: .1rem solid white;
+    padding: 1rem;
+}
+.left-part form textarea{
+    outline: none;
+    border: none;
+    margin-top:2rem;
+    font-size: 1.3rem;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+.left-part form button{
+    margin-top: 1rem;
+    padding: .5rem;
+    font-weight: 600;
+    color: white;
+    border-radius: 3rem;
+    background-color: var(--color-3);
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 .4rem white;
+    border: .1rem solid white;
+    transition: .1s;
+}
+.left-part form button:hover{
+    background-color: var(--color-1);
+}
+
+
+
+@media(max-width: 768px) {
+    html{
+        font-size: 55%;
+    }
+    .navbar .hide{
+        display: none;
+    }
+    .tabs i{
+        visibility: visible;
+    }
+   .about{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .about .content{
+        text-align: center;
+    }
+    .about img{
+        width: 50vw;
+    }
+    .navbar .logo{
+        font-size: 3.5rem;
+    }
+    .about .image{
+        position: relative;
+        top: 12%;
+    }
+    .about .icons a{
+        display: none;
+    }
+    .main .skills{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .skills .technical{
+        width: 80vw;
+        font-size: 2.2rem;
+        margin-bottom: 10%;
+    }
+    .skills .communication{
+        width: 80vw;
+    }
+    .communication #heading{
+        margin-bottom: 1.5rem;
+    }
+    .list ul li{
+        font-size: 2.5rem;
+    }
+    .acheivements{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .acheivements .card-1{
+        width: 60vw;
+    }
+    .education{
+        flex-direction: column;
+    }
+    .education .card{
+        width: 80vw;
+        margin-top: 5rem;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .contact .left-part{
+        width: 80vw;
+    }
+    .contact .right-part{
+        text-align: center;
+    }
+    .right-part{
+        width: 60vw;
+    }
+    .right-part .address h3{
+        font-size: 3rem;
+    }
+    .right-part .address h3 i {
+        font-size: 2.5rem;
+    }
+    .right-part .address p{
+        font-size: 2.5rem;
+    }
+    .right-part .phone h3{
+        font-size: 3rem;
+    }
+    .right-part .phone h3 .bx{
+        font-size: 2.5rem;
+    }
+    .right-part .phone p{
+        font-size: 2.5rem;
+    }
+    .right-part .email h3{
+        font-size: 3rem;
+    }
+    .right-part .email h3 .bx{
+        font-size: 2.5rem;
+    }
+    .right-part .email #email{
+        font-size: 1.8rem;
+    }
+    .icons-2 i{
+    font-size: 3.5rem;
+    }
+    .left-part form input{
+        font-size: 2.5rem;
+    }
+    .left-part form textarea{
+        font-size: 2.5rem;
+    }
+    .left-part form button{
+    font-size: 2.2rem;    
+    }
+}
+
+@media(max-width:428px) {
+       html{
+        font-size: 50%;
+    }
+    .navbar .hide{
+        display: none;
+    }
+    .tabs i{
+        visibility: visible;
+    }
+   .about{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .about .content{
+        text-align: center;
+    }
+    .about img{
+        width: 50vw;
+    }
+    .about .image{
+        position: relative;
+        top: 12%;
+    }
+    .about .icons a{
+        display: none;
+    }
+    .main .skills{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .skills .technical{
+        width: 80vw;
+        font-size: 2.2rem;
+        margin-bottom: 10%;
+    }
+    .technical .lang{
+        border-radius: 5rem;
+    }
+    .technical .lang .html{
+        border-radius: 5rem 0 0 5rem;
+    }
+     .technical .lang .css{
+        border-radius: 5rem 0 0 5rem;
+    } 
+    .technical .lang .Javascript{
+        border-radius: 5rem 0 0 5rem;
+    } 
+    .technical .lang .reactjs{
+        border-radius: 5rem 0 0 5rem;
+    } 
+    .technical .lang .github{
+        border-radius: 5rem 0 0 5rem;
+    }
+    .skills .communication{
+        width: 80vw;
+    }
+    .communication #heading{
+        margin-bottom: 1.5rem;
+    }
+    .list ul li{
+        font-size: 2.5rem;
+    }
+    .acheivements{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .acheivements .card-1{
+        width: 60vw;
+    }
+    .education{
+        flex-direction: column;
+    }
+    .education .card{
+        width: 80vw;
+        margin-top: 5rem;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .contact .left-part{
+        width: 80vw;
+    }
+    .contact .right-part{
+        text-align: center;
+    }
+    .right-part{
+        width: 90vw;
+    }
+    .right-part .address h3{
+        font-size: 2.5rem;
+    }
+    .right-part .address h3 i {
+        font-size: 2.2rem;
+    }
+    .right-part .address p{
+        font-size: 2.2rem;
+    }
+    .right-part .phone h3{
+        font-size: 2.5rem;
+    }
+    .right-part .phone h3 .bx{
+        font-size: 2.2rem;
+    }
+    .right-part .phone p{
+        font-size: 2..2rem;
+    }
+    .right-part .email h3{
+        font-size: 2.5rem;
+    }
+    .right-part .email h3 .bx{
+        font-size: 2.2rem;
+    }
+    .right-part .email #email{
+        font-size: 1.8rem;
+    }
+    .icons-2 i{
+    font-size: 3.5rem;
+    }
+    .left-part form input{
+        font-size: 2.5rem;
+    }
+    .left-part form textarea{
+        font-size: 2.5rem;
+    }
+    .left-part form button{
+    font-size: 2.2rem;    
+    }
+}
